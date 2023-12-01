@@ -1,4 +1,4 @@
-<div>
+<div class=".bg">
   <div
     class="w-full bg-cover md:invisible h-40 flex relative"
     style="background-image: url(../../assets/images/bg-sidebar-mobile.svg)"
@@ -111,6 +111,8 @@
       </div>
     </div>
 
+
+    
     <div class="bg-transparent -mb-12 -mt-16 md:ml-8 lg:ml-32 md:mt-8">
       <p class="bg-transparent text-blue-950 text-3xl font-bold">
         Personal info
@@ -119,7 +121,7 @@
         Please provide your name,email address and phone number.
       </p>
 
-      <form class="bg-transparent mt-6 md:mt-12">
+      <form class="bg-transparent mt-6 md:mt-12" [formGroup] ='profileForm' (ngSubmit)="onSubmit()">
         <label>
           <span class="bg-white">Name</span>
 
@@ -128,7 +130,9 @@
             type="name"
             placeholder="Please enter your name"
             class="border-2 p-2 rounded-md mt-2 focus:outline-none w-72 text-blue-950 font-semibold focus:border-sky-500 invalid:border-red-600 invalid:text-red-600 focus:invalid:border-red-600 peer bg-white md:w-96"
-          />
+            formControlName ='name'
+            index as i
+            />
           <p class="invisible peer-invalid:visible text-red-600 mt-2">
             Please enter a valid email
           </p>
@@ -142,7 +146,9 @@
             type="email"
             placeholder="Please enter your email"
             class="border-2 p-2 rounded-md mt-2 w-72 focus:outline-none text-blue-950 font-semibold focus:border-sky-500 invalid:border-red-600 invalid:text-red-600 focus:invalid:border-red-600 peer bg-white md:w-96"
-          />
+            formControlName ='email'
+            index as i
+            />
           <p class="invisible peer-invalid:visible text-red-600 mt-2 bg-white">
             Please enter a valid email
           </p>
@@ -157,7 +163,9 @@
             placeholder="Please enter your phone number"
             pattern="[0-9]+"
             class="border-2 p-2 w-72 rounded-md mt-2 focus:outline-none text-blue-950 font-semibold focus:border-sky-500 invalid:border-red-600 invalid:text-red-600 focus:invalid:border-red-600 peer bg-white md:w-96"
-          />
+            formControlName ='phone'
+            index as i
+            />
           <p class="invisible peer-invalid:visible text-red-600 mt-2 bg-white">
             Please enter a valid phone number
           </p>
@@ -165,18 +173,23 @@
 
         <button
           class="invisible md:visible md:ml-72 md:pr-4 md:pl-4 md:mt-3 border md:w-32 rounded-md text-white bg-blue-800 p-2 hover:bg-yellow-500 hover:text-black"
-        >
+          [disabled]="!profileForm.valid"
+          >
           Next Step
         </button>
+        <div class="md:invisible w-full h-20 bg-white bottom-0 left-0 right-0 fixed">
+          <button
+            class="border mt-6 ml-96 rounded-md text-white bg-blue-800 p-2 hover:bg-yellow-500 hover:text-black"
+           [disabled]="!profileForm.valid"
+            >
+            Next Step
+          </button>
+        </div>
       </form>
     </div>
+
   </div>
+
   <br />
-  <div class="md:invisible w-full h-20 bg-white bottom-0 left-0 right-0 fixed">
-    <button
-      class="border mt-6 ml-96 rounded-md text-white bg-blue-800 p-2 hover:bg-yellow-500 hover:text-black"
-    >
-      Next Step
-    </button>
-  </div>
+ 
 </div>
