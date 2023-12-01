@@ -1,0 +1,182 @@
+<div>
+  <div
+    class="w-full bg-cover md:invisible h-40 flex relative"
+    style="background-image: url(../../assets/images/bg-sidebar-mobile.svg)"
+  >
+    <div class="flex bg-transparent mt-6 ml-auto mr-auto">
+      <button
+        class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+      >
+        1
+      </button>
+      <button
+        class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+      >
+        2
+      </button>
+      <button
+        class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+      >
+        3
+      </button>
+      <button
+        class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+      >
+        4
+      </button>
+    </div>
+  </div>
+  <div
+    class="md:flex absolute right-12 left-24 top-28 w-4/6 md:-mt-20 md:static md:h-3/4 md:w-4/5 lg:w-3/5 rounded-md md:mx-24 md:ml-auto md:mr-auto md:my-16 bg-white p-3"
+  >
+    <div
+      class="flex invisible md:visible md:block md:w-60 md:pb-80 md:pt-6 md:pl-4 md:pr-4 border rounded-md"
+      style="background-image: url(../../assets/images/bg-sidebar-desktop.svg)"
+    >
+      <div class="flex mb-3 bg-transparent">
+        <button
+          class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+        >
+          1
+        </button>
+        <div class="ml-2 bg-inherit">
+          <p
+            class="uppercase text-gray-400 text-xs bg-transparent invisible md:visible"
+          >
+            Step 1
+          </p>
+          <p
+            class="uppercase text-white font-bold text-xs bg-transparent invisible md:visible"
+          >
+            Your Info
+          </p>
+        </div>
+      </div>
+      <div class="flex mb-3 bg-transparent">
+        <button
+          class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+        >
+          2
+        </button>
+        <div class="ml-2 bg-inherit">
+          <p
+            class="uppercase text-gray-400 text-xs bg-transparent invisible md:visible"
+          >
+            Step 2
+          </p>
+          <p
+            class="uppercase text-white font-bold text-xs bg-transparent invisible md:visible"
+          >
+            Select Plans
+          </p>
+        </div>
+      </div>
+      <div class="flex mb-3 bg-transparent">
+        <button
+          class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+        >
+          3
+        </button>
+        <div class="ml-2 bg-inherit">
+          <p
+            class="uppercase text-gray-400 text-xs bg-transparent invisible md:visible"
+          >
+            Step 3
+          </p>
+          <p
+            class="uppercase text-white font-bold text-xs bg-transparent invisible md:visible"
+          >
+            Add-ons
+          </p>
+        </div>
+      </div>
+      <div class="flex mb-3 bg-transparent">
+        <button
+          class="mr-2 p-4 border h-5 flex justify-center text-white items-center w-5 text-xs font-bold border-white rounded-full mb-2 hover:bg-blue-400 hover:text-black hover:border-blue-400"
+        >
+          4
+        </button>
+        <div class="ml-2 bg-inherit">
+          <p
+            class="uppercase text-gray-400 text-xs bg-transparent invisible md:visible"
+          >
+            Step 4
+          </p>
+          <p
+            class="uppercase text-white font-bold text-xs bg-transparent invisible md:visible"
+          >
+            Summary
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-transparent -mb-12 -mt-16 md:ml-8 lg:ml-32 md:mt-8">
+      <p class="bg-transparent text-blue-950 text-3xl font-bold">
+        Personal info
+      </p>
+      <p class="bg-transparent w-72 mb:4 md:text-sm md:mt-2 text-gray-400">
+        Please provide your name,email address and phone number.
+      </p>
+
+      <form class="bg-transparent mt-6 md:mt-12">
+        <label>
+          <span class="bg-white">Name</span>
+
+          <br />
+          <input
+            type="name"
+            placeholder="Please enter your name"
+            class="border-2 p-2 rounded-md mt-2 focus:outline-none w-72 text-blue-950 font-semibold focus:border-sky-500 invalid:border-red-600 invalid:text-red-600 focus:invalid:border-red-600 peer bg-white md:w-96"
+          />
+          <p class="invisible peer-invalid:visible text-red-600 mt-2">
+            Please enter a valid email
+          </p>
+        </label>
+
+        <label>
+          <span class="bg-white">Email</span>
+
+          <br />
+          <input
+            type="email"
+            placeholder="Please enter your email"
+            class="border-2 p-2 rounded-md mt-2 w-72 focus:outline-none text-blue-950 font-semibold focus:border-sky-500 invalid:border-red-600 invalid:text-red-600 focus:invalid:border-red-600 peer bg-white md:w-96"
+          />
+          <p class="invisible peer-invalid:visible text-red-600 mt-2 bg-white">
+            Please enter a valid email
+          </p>
+        </label>
+
+        <label>
+          <span class="bg-white">Phone Number</span>
+
+          <br />
+          <input
+            type="tel"
+            placeholder="Please enter your phone number"
+            pattern="[0-9]+"
+            class="border-2 p-2 w-72 rounded-md mt-2 focus:outline-none text-blue-950 font-semibold focus:border-sky-500 invalid:border-red-600 invalid:text-red-600 focus:invalid:border-red-600 peer bg-white md:w-96"
+          />
+          <p class="invisible peer-invalid:visible text-red-600 mt-2 bg-white">
+            Please enter a valid phone number
+          </p>
+        </label>
+
+        <button
+          class="invisible md:visible md:ml-72 md:pr-4 md:pl-4 md:mt-3 border md:w-32 rounded-md text-white bg-blue-800 p-2 hover:bg-yellow-500 hover:text-black"
+        >
+          Next Step
+        </button>
+      </form>
+    </div>
+  </div>
+  <br />
+  <div class="md:invisible w-full h-20 bg-white bottom-0 left-0 right-0 fixed">
+    <button
+      class="border mt-6 ml-96 rounded-md text-white bg-blue-800 p-2 hover:bg-yellow-500 hover:text-black"
+    >
+      Next Step
+    </button>
+  </div>
+</div>
