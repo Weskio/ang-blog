@@ -9,6 +9,7 @@ import { Blogdetails } from '../blogdetails';
   styleUrl: './blog-details.component.css'
 })
 export class BlogDetailsComponent {
+  //setting up blog to adhere blogdetails interface
   @Input() blog!:Blogdetails;
 
 }

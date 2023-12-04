@@ -1,6 +1,6 @@
 export interface Blogdetails {
     id: number,
-    blogNumber:number,
+    blogNumber?:number,
     title:string,
     desc:string,
     photo:string,
