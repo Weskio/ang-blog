@@ -25,13 +25,11 @@
         <!-- sidebar -->
         <div class="sidebar border p-6 text-white md:ml-8 md:h-4/6 md:w-96">
             <p class="news-title text-2xl font-bold  ">News</p>
-            <ul class="mt-8 divide-y divide-slate-500">
-                <li >
-                    <ng-container *ngFor="let side of sideBarDetails">
-                        <app-sidebar [side]="side" />
-                    </ng-container>
-                </li>  
-            </ul>
+            <ul class="mt-8 space-y-4">
+                <li *ngFor="let side of sideBarDetails" class="py-4 border-t divide-slate-400">
+                  <app-sidebar [side]="side"></app-sidebar>
+                </li>
+              </ul>
 
         </div>
     </div>

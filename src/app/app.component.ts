@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
 import { SignUpComponent } from "./sign-up/sign-up.component";
 import { HomeComponent } from "./home/home.component";
+import {RouterModule} from '@angular/router';
 
 @Component({
     selector: 'app-root',
@@ -10,6 +11,7 @@ import { HomeComponent } from "./home/home.component";
     templateUrl: './app.component.html',
     styleUrl: './app.component.css',
     imports: [CommonModule, RouterOutlet, SignUpComponent, HomeComponent]
+    
 })
 export class AppComponent {
   title = 'ang-blog';
