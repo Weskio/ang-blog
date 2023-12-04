@@ -40,41 +40,10 @@
             </ul>
         </div>
     </div>
-    <div class="article-list md:pt-0 mt-16 mb-24  md:flex md:p-24 p-4">
-        <div class="item flex mb-8">
-            <img src="../../assets/images/image-retro-pcs.jpg" width="140px"/>
-            <div class="item-desc ml-8">
-                <p class="font-bold text-5xl text-gray-300">01</p>
-                <br/>
-                <a href="" class="capitalize mt-3 mb-3 font-bold text-xl text-blue-950 hover:text-orange-400">Reviving retro PCs</a>
-                <br/>
-                <br/>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Voluptatum veritatis magni natus.</p>
-            </div>
-        </div>
-        <div class="item flex mb-8">
-            <img src="../../assets/images/image-top-laptops.jpg" width="140px"/>
-            <div class="item-desc ml-8">
-                <p class="font-bold text-5xl text-gray-300">02</p> <br/>
-                <a href="goo.com" class="capitalize font-bold text-xl text-blue-950 hover:text-orange-400">Top 10 laptops of 2022</a>
-                <br/>
-                <br/>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Voluptatum veritatis magni natus.</p>
-            </div>
-        </div>
-        <div class="item flex mb-8">
-            <img src="../../assets/images/image-gaming-growth.jpg" width="140px"/>
-            <div class="item-desc ml-8">
-                <p class="font-bold text-5xl text-gray-300">03</p>
-                <br/>
-                <a href="" class="capitalize mt-3 mb-3 font-bold text-xl text-blue-950 hover:text-orange-400">the growth of gaming</a>
-                <br/>
-                <br/>
-                <p class="text-gray-500">Lorem ipsum dolor sit amet,
-                consectetur adipisicing elit. Voluptatum veritatis magni natus.</p>
-            </div>
-        </div>
+    <div class="article-list md:pt-0 mt-16 mb-8  md:grid md:grid-cols-3 md:p-24 p-4">
+        <ng-container *ngFor='let blog of blogList'>
+            <app-blog-details [blog]="blog" />
+        </ng-container>
+       
     </div>
 </div>
