@@ -1,4 +1,4 @@
-import { Component, inject } from '@angular/core';
+import { Component, Input, inject } from '@angular/core';
 import { Blogdetails } from '../blogdetails';
 import { BlogDetailsComponent } from "../blog-details/blog-details.component";
 import { NgFor } from '@angular/common';
@@ -14,6 +14,9 @@ import { SidebarComponent } from "../sidebar/sidebar.component";
 })
 export class HomeComponent {
 //injecting the blog articles service
+
+
+
   blogArticles= inject(BlogArticlesService)
 
 
