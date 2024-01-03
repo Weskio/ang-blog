@@ -4,6 +4,7 @@ import { BlogDetailsComponent } from "../blog-details/blog-details.component";
 import { NgFor } from '@angular/common';
 import { BlogArticlesService } from '../blog-articles.service';
 import { SidebarComponent } from "../sidebar/sidebar.component";
+import { AuthserviceService } from '../authservice.service';
 
 @Component({
     selector: 'app-home',
@@ -15,6 +16,7 @@ import { SidebarComponent } from "../sidebar/sidebar.component";
 export class HomeComponent {
 //injecting the blog articles service
 
+authService = inject(AuthserviceService)
 
 
   blogArticles= inject(BlogArticlesService)

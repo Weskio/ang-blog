@@ -11,12 +11,12 @@ import { url } from 'inspector';
 import { UserInfo } from 'os';
 import { UserInterface } from '../user-interface';
 import { AuthserviceService } from '../authservice.service';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-sign-up',
   standalone: true,
-  imports: [FormsModule, ReactiveFormsModule, HttpClientModule],
+  imports: [FormsModule, ReactiveFormsModule, HttpClientModule, RouterLink],
   templateUrl: './sign-up.component.html',
   styleUrl: './sign-up.component.css',
 })
